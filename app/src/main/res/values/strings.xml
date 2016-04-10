@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TimeBeeps</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_menu_interval">Intervals</string>
+
+    <string name="explainText">Set how many seconds you want each interval to last and how many times you want to repeat it</string>
+
+    <string name="interval_label">Active duration: </string>
+    <string name="seconds_between_beeps">30</string>
+    <string name="remaining_seconds_STR">"remaining: "</string>
+    <string name="until_next_beep"></string>
+
+    <string name="rest_duration_label">Rest duration: </string>
+    <string name="seconds_rest">60</string>
+    <string name="remaining_rest_STR">"remaining: "</string>
+    <string name="remaining_rest"></string>
+
+    <string name="sets_label"># of sets</string>
+    <string name="how_many_sets">5</string>
+    <string name="remaining_sets_STR">"remaining: "</string>
+    <string name="until_next_set"></string>
+
+    <string name="total_time_label">total time: </string>
+    <string name="total_time_calc">7m 30s</string>
+
+    <string name="button_start">Start</string>
+    <string name="button_pause">Pause/Resume</string>
+    <string name="button_stop">Stop</string>
+</resources>

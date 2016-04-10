@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dip" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/explainText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/interval_label" />
+
+        <EditText android:id="@+id/assignSetActive"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/seconds_between_beeps" />
+
+        <LinearLayout
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remaining_seconds_STR"/>
+
+
+            <TextView android:id="@+id/activeRemaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/until_next_beep" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- android:background="@drawable/button_start" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rest_duration_label" />
+
+        <EditText android:id="@+id/assignSetRest"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/seconds_rest" />
+
+        <LinearLayout
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remaining_rest_STR" />
+
+            <TextView android:id="@+id/restRemaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/remaining_rest" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" >
+
+        <TextView
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sets_label" />
+
+        <EditText android:id="@+id/assignSets"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/how_many_sets" />
+
+        <LinearLayout
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remaining_sets_STR" />
+
+            <TextView android:id="@+id/setsRemaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/until_next_set" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" >
+
+        <TextView
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_time_label"/>
+
+        <TextView android:id="@+id/totalTime"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/total_time_calc" />
+
+        <TextView
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="?android:attr/buttonBarStyle" >
+
+        <Button android:id="@+id/buttonStart"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_start"
+            android:onClick="startTimer" />
+
+        <Button android:id="@+id/buttonPause"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_pause"
+            android:onClick="pauseTimer" />
+
+        <Button android:id="@+id/buttonStop"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_stop"
+            android:onClick="stopTimer" />
+
+    </LinearLayout>
+
+</LinearLayout>
